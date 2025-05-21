@@ -1,0 +1,85 @@
+.my-profile-mobile {
+  .section-wrapper {
+    margin-bottom: 1rem;
+
+    .section-header {
+      cursor: pointer;
+
+      .section-title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-weight: 400;
+      }
+
+      .section-desc {
+        margin-top: 0.25rem;
+        color: #9b9b9b;
+        text-align: left;
+        display: block;
+        font-size: 0.875rem;
+      }
+    }
+
+    .section-content {
+      padding: 1rem;
+      border-top: 0.1rem solid black;
+      margin-left: 0.5rem;
+      padding: 1rem 0 0 0;
+    }
+  }
+
+  .profile-header {
+    margin-bottom: 1rem;
+
+    .profile-img {
+      border-radius: 50%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .profile-info {
+      font-weight: 400;
+    }
+  }
+}
+
+.email {
+  color: #9b9b9b;
+  font-size: 0.875rem;
+}
+
+.profile-form {
+  .form-control {
+    width: 100% !important;
+    height: 50px;
+  }
+
+  &::placeholder {
+    color: #888888;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: red !important;
+    box-shadow: none !important;
+    outline: none;
+  }
+
+  .submit-btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    background-color: #333333;
+    border-color: #333333;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: 333333;
+      border-color: 333333;
+      color: #fff;
+      box-shadow: none;
+    }
+  }
+}
