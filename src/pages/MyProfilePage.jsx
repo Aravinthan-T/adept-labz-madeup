@@ -1,6 +1,7 @@
 // src/pages/MyProfilePage.jsx
 import { useEffect, useState } from "react";
 import MyProfileMobile from "../components/MyProfileMobile.jsx";
+import MyProfileLarger from "../components/MyProfileLarger.jsx";
 
 const MyProfilePage = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -11,11 +12,7 @@ const MyProfilePage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return (
-    <>
-      {isMobile ? <MyProfileMobile /> : <div>Desktop profile will go here</div>}
-    </>
-  );
+  return <>{isMobile ? <MyProfileMobile /> : <MyProfileLarger />}</>;
 };
 
 export default MyProfilePage;

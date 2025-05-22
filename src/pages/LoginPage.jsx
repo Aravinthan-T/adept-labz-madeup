@@ -1,10 +1,8 @@
-import React from "react";
 import { Container, Row, Col, Form, Button, Card } from "react-bootstrap";
 
 const LoginPage = () => {
   const handleLogin = (e) => {
     e.preventDefault();
-    // Handle login logic here
     console.log("Login submitted");
   };
 
@@ -17,7 +15,6 @@ const LoginPage = () => {
         <Col md={{ span: 4, offset: 4 }}>
           <Card className="p-4 shadow-sm">
             <div className="text-center mb-4">
-              <img alt="Logo" height="50" />
               <h3 className="mt-3">Welcome Back</h3>
               <p className="text-muted">Please login to continue</p>
             </div>
@@ -28,6 +25,7 @@ const LoginPage = () => {
                   type="text"
                   placeholder="Enter username"
                   required
+                  className="w-100"
                 />
               </Form.Group>
 
@@ -37,12 +35,11 @@ const LoginPage = () => {
                   type="password"
                   placeholder="Enter password"
                   required
+                  className="w-100"
                 />
               </Form.Group>
 
-              <Button type="submit" variant="primary" className="w-100">
-                Login
-              </Button>
+              <button className="w-100 btn btn-dark login-btn">LOGIN</button>
             </Form>
             <div className="text-center mt-3">
               <small className="text-muted">Forgot password?</small>

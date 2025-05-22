@@ -9,13 +9,18 @@ import MyProfilePage from "./pages/MyProfilePage";
 const App = () => {
   return (
     <Router>
-      <AppNavbar />
-      <Routes>
-        <Route path="/" element={<DashboardPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/myprofile" element={<MyProfilePage />} />
-      </Routes>
-      <Footer />
+      <div className="d-flex flex-column min-vh-100">
+        <AppNavbar />
+        <div className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<DashboardPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/myprofile" element={<MyProfilePage />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </div>
     </Router>
   );
 };

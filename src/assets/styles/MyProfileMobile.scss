@@ -55,17 +55,6 @@
     height: 50px;
   }
 
-  &::placeholder {
-    color: #888888;
-    opacity: 1;
-  }
-
-  &:focus {
-    border-color: red !important;
-    box-shadow: none !important;
-    outline: none;
-  }
-
   .submit-btn {
     width: 100%;
     height: 50px;
@@ -76,10 +65,51 @@
     &:hover,
     &:focus,
     &:active {
-      background-color: 333333;
-      border-color: 333333;
+      background-color: #333333;
+      border-color: #333333;
       color: #fff;
       box-shadow: none;
     }
+  }
+}
+
+.order-details {
+  font-size: 11px;
+  .product-desc {
+    font-size: 12px;
+  }
+}
+
+.border-line-wrapper {
+  .pending {
+    border-radius: 6px 6px 0 0;
+    border: 1px solid #333333;
+    background-color: #333333;
+    color: #fff;
+    font-size: 11px;
+    z-index: 1;
+  }
+
+  .pending-2 {
+    border-radius: 6px 6px 0 0;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+    color: #777777;
+    font-size: 11px;
+    z-index: 1;
+  }
+  
+}
+
+.form-control:focus {
+  border-color: black !important;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.form-control {
+  &::placeholder {
+    color: #888888;
+    opacity: 1;
   }
 }

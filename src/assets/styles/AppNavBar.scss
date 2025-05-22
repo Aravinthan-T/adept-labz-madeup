@@ -11,3 +11,11 @@
   cursor: pointer;
   font-size: 1.5rem;
 }
+
+.user-section {
+  .list-group-item {
+    border: 0px !important;
+    display: flex !important;
+    justify-content: center;
+  }
+}
