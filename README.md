@@ -1,9 +1,11 @@
 # 🧵 MadeUp – Fashion E-Commerce Platform
+
 MadeUp is a responsive fashion e-commerce application built with React and Vite, offering a seamless shopping experience across devices. Leveraging modern web technologies, it provides dynamic product listings, smooth navigation, and a user-friendly interface.
 
 ---
 
 ## 🚀 Features
+
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Dynamic Category Labels**: Interactive scrolling for product categories on mobile.
 - **Product Showcase**: Display of latest collections with hover effects.
@@ -14,6 +16,7 @@ MadeUp is a responsive fashion e-commerce application built with React and Vite,
 ---
 
 ## 🛠️ Tech Stack
+
 - **Frontend**: React, Vite
 - **Styling**: React-Bootstrap, Custom CSS
 - **Icons**: React Icons
@@ -22,6 +25,7 @@ MadeUp is a responsive fashion e-commerce application built with React and Vite,
 ---
 
 ## 📦 Installation
+
 1. Clone the repository:
 
    git clone https://github.com/Aravinthan-T/adept-labz-madeup.git
@@ -40,19 +44,19 @@ MadeUp is a responsive fashion e-commerce application built with React and Vite,
 ---
 
 📁 Project Structure
-├── public/                # Static assets
+├── public/ # Static assets
 ├── src/
-│   ├── assets/            # Images and icons
-│   ├── components/        # Reusable UI components
-│   ├── constants/         # Static data (e.g., product info)
-│   ├── pages/             # React components for each page
-│   ├── App.jsx            # Main application component
-│   └── main.jsx           # Entry point
-├── .gitignore             # Git ignore rules
-├── package.json           # Project metadata and dependencies
-├── package-lock.json      # Lock file for dependencies
-├── vite.config.js         # Vite configuration
-└── README.md              # Project documentation
+│ ├── assets/ # Images and icons
+│ ├── components/ # Reusable UI components
+│ ├── constants/ # Static data (e.g., product info)
+│ ├── pages/ # React components for each page
+│ ├── App.jsx # Main application component
+│ └── main.jsx # Entry point
+├── .gitignore # Git ignore rules
+├── package.json # Project metadata and dependencies
+├── package-lock.json # Lock file for dependencies
+├── vite.config.js # Vite configuration
+└── README.md # Project documentation
 
 ---
 
