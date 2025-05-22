@@ -48,7 +48,9 @@ const AppNavbar = () => {
 
         {!isLoginPage && (
           <Nav className="d-none d-lg-flex justify-content-center gap-4">
-            <Nav.Link as={NavLink}>For Me</Nav.Link>
+            <Nav.Link as={NavLink} style={{ color: "red" }}>
+              For Me
+            </Nav.Link>
             <Nav.Link as={NavLink}>Jeans</Nav.Link>
             <Nav.Link as={NavLink}>Shirts</Nav.Link>
             <Nav.Link as={NavLink}>T-Shirts</Nav.Link>

@@ -6,10 +6,47 @@ import LPImage3 from "../assets/images/LPImage3.png";
 import LPImage4 from "../assets/images/LPImage4.png";
 import { products, testimonials } from "../constants/Products";
 import { FaLocationDot } from "react-icons/fa6";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import ProfileImg from "../assets/images/myProfile.png";
 
 const DashboardPage = () => {
+  const scrollContent = (amount) => {
+    document
+      .getElementById("scrollContent")
+      ?.scrollBy({ left: amount, behavior: "smooth" });
+  };
+
+  const categories = [
+    { img: ProfileImg, label: "Jeans" },
+    { img: ProfileImg, label: "Shirts" },
+    { img: ProfileImg, label: "Shoes" },
+    { img: ProfileImg, label: "Jackets" },
+    { img: ProfileImg, label: "T-Shirts" },
+    { img: ProfileImg, label: "Shorts" },
+  ];
   return (
     <Container fluid className="p-0">
+      <div className="d-block d-lg-none">
+        <div className="scroll-label-wrapper">
+          <div className="scroll-arrow" onClick={() => scrollContent(-100)}>
+            <FaChevronLeft />
+          </div>
+
+          <div className="scrollable-labels" id="scrollContent">
+            {categories.map((cat, index) => (
+              <div className="label-item" key={index}>
+                <img src={cat.img} alt={cat.label} className="category-img" />
+                <div>{cat.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="scroll-arrow" onClick={() => scrollContent(100)}>
+            <FaChevronRight />
+          </div>
+        </div>
+      </div>
+
       <Row>
         <div className="image-wrapper">
           <img
@@ -203,7 +240,6 @@ const DashboardPage = () => {
           </div>
         </Col>
       </Row>
-
     </Container>
   );
 };
