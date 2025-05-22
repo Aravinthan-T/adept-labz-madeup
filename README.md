@@ -1,12 +1,64 @@
-# React + Vite
+# 🧵 MadeUp – Fashion E-Commerce Platform
+MadeUp is a responsive fashion e-commerce application built with React and Vite, offering a seamless shopping experience across devices. Leveraging modern web technologies, it provides dynamic product listings, smooth navigation, and a user-friendly interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Dynamic Category Labels**: Interactive scrolling for product categories on mobile.
+- **Product Showcase**: Display of latest collections with hover effects.
+- **Testimonials Section**: Customer feedback with star ratings.
+- **Newsletter Subscription**: Email input with a custom subscribe button.
+- **Location Access**: Quick access to store locator.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **Frontend**: React, Vite
+- **Styling**: React-Bootstrap, Custom CSS
+- **Icons**: React Icons
+- **Routing**: React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Installation
+1. Clone the repository:
+
+   git clone https://github.com/Aravinthan-T/adept-labz-madeup.git
+   cd adept-labz-madeup
+
+2. Install dependencies:
+
+   npm install
+
+3. Run the development server:
+
+   npm run dev
+
+4. Open your browser and visit http://localhost:5173
+
+---
+
+📁 Project Structure
+├── public/                # Static assets
+├── src/
+│   ├── assets/            # Images and icons
+│   ├── components/        # Reusable UI components
+│   ├── constants/         # Static data (e.g., product info)
+│   ├── pages/             # React components for each page
+│   ├── App.jsx            # Main application component
+│   └── main.jsx           # Entry point
+├── .gitignore             # Git ignore rules
+├── package.json           # Project metadata and dependencies
+├── package-lock.json      # Lock file for dependencies
+├── vite.config.js         # Vite configuration
+└── README.md              # Project documentation
+
+---
+
+📞 Contact
+Author: Aravinthan T
+
+GitHub: https://github.com/Aravinthan-T
+
+Email: aravinthan.t.2204@gmail.com
