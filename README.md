@@ -43,23 +43,6 @@ MadeUp is a responsive fashion e-commerce application built with React and Vite,
 
 ---
 
-📁 Project Structure
-├── public/ # Static assets
-├── src/
-│ ├── assets/ # Images and icons
-│ ├── components/ # Reusable UI components
-│ ├── constants/ # Static data (e.g., product info)
-│ ├── pages/ # React components for each page
-│ ├── App.jsx # Main application component
-│ └── main.jsx # Entry point
-├── .gitignore # Git ignore rules
-├── package.json # Project metadata and dependencies
-├── package-lock.json # Lock file for dependencies
-├── vite.config.js # Vite configuration
-└── README.md # Project documentation
-
----
-
 📞 Contact
 Author: Aravinthan T
 
